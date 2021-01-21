@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <style media="screen">
+    table,th,td{
+      border: 1px solid black;
+    }
+    table{
+        border-collapse: collapse;
+    }
+
+  </style>
+  <body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>AccountNo</th>
+        <th>Cash</th>
+
+      </tr>
+
+    
+
+      <% for(var i=0;i<docs.length;i++){ %>
+
+        <tr>
+
+          <td><%=docs[i].Name %></td>
+          <td><%=docs[i].AccountNo %></td>
+          <td><%=docs[i].Cash %></td>
+        </tr>
+
+          <%   } %>
+
+
+
+    </table>
+<form class="" action="/ad" method="post">
+
+</form>
+  </body>
+</html>
